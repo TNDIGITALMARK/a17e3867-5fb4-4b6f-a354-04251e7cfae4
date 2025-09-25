@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import {
-  Timeline,
+  Activity,
   CheckCircle,
   Circle,
   Clock,
@@ -136,7 +136,7 @@ export function CaseTimeline() {
       <CardHeader className="pb-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Timeline className="w-5 h-5 text-legal-secondary" />
+            <Activity className="w-5 h-5 text-legal-secondary" />
             <CardTitle className="text-legal-text-light">Case Timeline</CardTitle>
           </div>
           <Button variant="outline" size="sm" className="border-legal-secondary text-legal-secondary hover:bg-legal-secondary hover:text-legal-secondary-foreground">

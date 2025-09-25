@@ -9,12 +9,11 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   
-  experimental: {
-    outputFileTracingRoot: process.cwd(), // Fix workspace root warnings
-  },
-  
+  // Fix workspace root warnings
+  outputFileTracingRoot: process.cwd(),
+
   // Simple image configuration
-  images: { 
+  images: {
     unoptimized: true,
   },
 

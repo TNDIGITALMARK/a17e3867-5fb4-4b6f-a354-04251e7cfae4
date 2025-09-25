@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -19,7 +19,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import {
-  Gallery,
+  Grid3X3,
   Search,
   Filter,
   FileText,
@@ -171,7 +171,7 @@ export function EvidenceGallery() {
         <CardHeader className="pb-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <Gallery className="w-5 h-5 text-legal-secondary" />
+              <Grid3X3 className="w-5 h-5 text-legal-secondary" />
               <CardTitle className="text-legal-text-light">Evidence Gallery</CardTitle>
             </div>
             <Badge variant="secondary" className="bg-legal-secondary/10 text-legal-secondary">
@@ -288,7 +288,7 @@ export function EvidenceGallery() {
 
           {filteredItems.length === 0 && (
             <div className="text-center py-8 text-muted-foreground">
-              <Gallery className="w-12 h-12 mx-auto mb-2 opacity-50" />
+              <Grid3X3 className="w-12 h-12 mx-auto mb-2 opacity-50" />
               <p>No evidence items found</p>
             </div>
           )}
